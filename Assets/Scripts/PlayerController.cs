@@ -31,7 +31,6 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter(Collision other) {
         var score = GameManager.Instance.score;
-        UnityEngine.Debug.Log("Eu encostei no:" + other.gameObject.name);
         
         if(other.gameObject.CompareTag("Obstacle")){
             UnityEngine.Debug.Log("GAME OVER...");
